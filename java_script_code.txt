@@ -1,0 +1,20 @@
+// let name=document.getElementById("Sai Pavan").palceholder="Sai Pavan";
+let in_name=document.getElementById("naming");
+// let password=document.getElementById("pasupuleti").palceholder="pasupuleti";
+let in_pass=document.getElementById("pass");
+let btn=document.querySelector("button");
+let res=document.querySelector("#con");
+
+btn.addEventListener("click",()=>{
+    if(in_name.value=="" || in_pass.value==""){
+        res.innerText="Please fill the details properly";
+    }
+    else if(in_name.value=="Sai Pavan" && in_pass.value=="pasupuleti"){
+        res.style.backgroundColor="green";
+        res.innerText="Login process successful";
+    }
+    else{
+        res.style.backgroundColor="red";
+        res.innerText="Login process failure";
+    }
+})
